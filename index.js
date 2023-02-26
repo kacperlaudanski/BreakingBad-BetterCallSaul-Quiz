@@ -17,7 +17,7 @@ const scoreValue = document.querySelector('.score-value');
 const congrats = document.querySelector('.congrats'); 
 
 let shuffledQuestion, currentQuestionIndex; 
-let correctAnswers = 0, 
+let correctAnswers = 1, 
     scoreEndValue = (correctAnswers/15)*100, 
     circleSpeed = 100; 
 let color;

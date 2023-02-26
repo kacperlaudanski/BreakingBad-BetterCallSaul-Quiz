@@ -2,12 +2,12 @@
 export const questionsBTC = [
     {
         id: 1,
-        question: "What is Jimmy's occupation before becoming a lawyer ?",
+        question: "What is the name of the drug lord who Jimmy represent in court ?",
         answers: [
-            { answer: "accountant", correct: false },
-            { answer: "salesman", correct: true },
-            { answer: "bartender", correct: false },
-            { answer: "waiter", correct: false }
+            { answer: "Tuco Salamanca", correct: false },
+            { answer: "Lalo Salamanca", correct: true },
+            { answer: "Juan Bolsa", correct: false },
+            { answer: "Hector Salamanca", correct: false }
         ]
     },
     {
@@ -25,8 +25,8 @@ export const questionsBTC = [
         question: "What is the pseudonym that Jimmy later uses as a lawyer ?", 
         answers: [
             { answer: "Walter White", correct: false },
-            { answer: "Gustavo Fring", correct: false },
-            { answer: "Mike Ehrmantraut", correct: false },
+            { answer: "Heisenberg", correct: false },
+            { answer: "Nacho Varga", correct: false },
             { answer: "Saul Goodman", correct: true }
         ]
     },
@@ -36,7 +36,7 @@ export const questionsBTC = [
         answers: [
             { answer: "Chuck McGill", correct: true },
             { answer: "Howard Hamlin", correct: false },
-            { answer: "Kim Wexler", correct: false },
+            { answer: "Paul McGill", correct: false },
             { answer: "Nacho Varga", correct: false }
         ]  
     },
@@ -62,12 +62,12 @@ export const questionsBTC = [
     },
     {
         id: 7,
-        question: "Who is the owner of the laundry ?", 
+        question: "What is the name of the retirement home where Jimmy's friend Irene lives ?", 
         answers: [
-            { answer: "Gustavo Fring", correct: true },
-            { answer: "Hector Salamanca", correct: false },
-            { answer: "Nacho Varga", correct: false },
-            { answer: "Lalo Salamanca", correct: false }
+            { answer: "Sandpiper Crossing", correct: true },
+            { answer: "Mesa Grande", correct: false },
+            { answer: "Desert Oasis", correct: false },
+            { answer: "Sunrise Hills", correct: false }
         ]  
     },
     {
@@ -92,12 +92,12 @@ export const questionsBTC = [
     },
     {
         id: 10,
-        question: "Who is Jimmy's brother ?", 
+        question: "What is the name of the doctor who helps Gus Fring with his illegal activities ?", 
         answers: [
-            { answer: "Chuck McGill", correct: true },
-            { answer: "Howard Hamlin", correct: false },
-            { answer: "Kim Wexler", correct: false },
-            { answer: "Nacho Varga", correct: false }
+            { answer: "Dr. Caldera", correct: true },
+            { answer: "Dr. Bruckner", correct: false },
+            { answer: "Dr. Kessler", correct: false },
+            { answer: "Dr. Weiss", correct: false }
         ]  
     },
     {

@@ -13,7 +13,7 @@ export const questionsBB = [
         id: 2,
         question: "What is the name of Walter White's partner in the meth business ?", 
         answers: [
-            { answer: "Gus Fring", correct: false },
+            { answer: "Steve Gomez", correct: false },
             { answer: "Saul Goodman", correct: false },
             { answer: "Hank Schrader", correct: false },
             { answer: "Jesse Pinkman", correct: true }
@@ -26,7 +26,7 @@ export const questionsBB = [
             { answer: "Purple Haze", correct: false },
             { answer: "Blue Sky", correct: true },
             { answer: "Yellow Submarine", correct: false },
-            { answer: "Green Dream", correct: true }
+            { answer: "Green Dream", correct: false }
         ]
     },
     {
@@ -61,12 +61,12 @@ export const questionsBB = [
     },
     {
         id: 7,
-        question: "What is the name of the episode where Hank finds out that Walter White is Heisenberg ", 
+        question: "What is the name of the Nazi gang leader who kills Hank and imprisons Jesse ?", 
         answers: [
-            { answer: "Ozymandias", correct: true },
-            { answer: "Gliding Over All", correct: false },
-            { answer: "Felina", correct: false },
-            { answer: "Say My Name", correct: false }
+            { answer: "Jack Welker", correct: true },
+            { answer: "Todd Alquist", correct: false },
+            { answer: "Kenny", correct: false },
+            { answer: "Emilio Koyama", correct: false }
         ]  
     },
     {
@@ -124,7 +124,7 @@ export const questionsBB = [
         question: "What is the name of the drug kingpin who hires Walter to cook meth?", 
         answers: [
             { answer: "Hector Salamanca", correct: false },
-            { answer: "Gus Fring", correct: true },
+            { answer: "Gustavo Fring", correct: true },
             { answer: "Tuco Salamanca", correct: false },
             { answer: "Don Eladio Vuente", correct: false }
         ]  
@@ -133,9 +133,9 @@ export const questionsBB = [
         id: 14,
         question: "What is the name of the heroine addict who becomes Jesse's girlfriend?", 
         answers: [
-            { answer: "Jane Margolis", correct: true },
-            { answer: "Skyler White", correct: true },
-            { answer: "Marie Schrader", correct: false },
+            { answer: "Jane", correct: true },
+            { answer: "Andrea", correct: false },
+            { answer: "Marie", correct: false },
             { answer: "Lydia", correct: false }
         ]  
     },
@@ -146,7 +146,7 @@ export const questionsBB = [
             { answer: "Steve Gomez", correct: false },
             { answer: "Walter White", correct: false },
             { answer: "Hank Schrader", correct: true },
-            { answer: "Marco and Leonel Salamanca", correct: false }
+            { answer: "Jesse Pinkman", correct: false }
         ]  
     }
 ];
