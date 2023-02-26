@@ -72,12 +72,12 @@ export const questionsBTC = [
     },
     {
         id: 8,
-        question: "What is the name of the war veteran who becomes a client of Jimmy's ?", 
+        question: "What was Mike's occupation when he lived in Philadelphia ?", 
         answers: [
-            { answer: "Brice", correct: false },
-            { answer: "Bryce", correct: false },
-            { answer: "Price", correct: false },
-            { answer: "Pryce", correct: true }
+            { answer: "Taxi driver", correct: false },
+            { answer: "Actor", correct: false },
+            { answer: "Gardener", correct: false },
+            { answer: "Policeman", correct: true }
         ]  
     },
     {

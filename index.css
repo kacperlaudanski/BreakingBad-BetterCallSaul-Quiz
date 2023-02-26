@@ -6,6 +6,17 @@ body{
  width: 100%;   
  margin: 0;
  overflow: none;
+ font-family: 'Roboto Condensed', sans-serif;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ background-image: url(/public/images/bb-btc-kopia.jpg);
+ background-position: center; 
+ background-size:cover; 
+ background-repeat: no-repeat;
+ transition: linear;
+ transition-duration: 2s;
+ transition-property: background-image;
 }
 
 .container{
@@ -27,6 +38,9 @@ body{
 
 .btc-half{
     background-image: url(public/images/better-call-saul-Season-5-COVER.jpeg);
+    transition: linear;
+    transition-duration: 2s;
+    transition-property: transform;
 }
 
 .bb-half{
@@ -137,45 +151,149 @@ body{
 }
 
 .quiz-container{
-    width:50%; 
-    height:auto; 
-    margin: 14em auto;
+    width:70%; 
+    height:70%; 
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     flex-direction: column;
-    background-color: aqua;
+    opacity: 0;
+    background:rgba(200, 200, 200, 0.879);
     padding:20px;
     border-radius: 15px;
+    color:rgb(0, 0, 0);
+    letter-spacing: 1px;
+    transition: opacity 2s ease-in-out;
+    -webkit-box-shadow: 2px 8px 24px 5px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 2px 8px 24px 5px rgba(0, 0, 0, 0.6);
+    box-shadow: 2px 8px 24px 5px rgba(0, 0, 0, 0.6);
+    z-index: 4;
+    box-sizing: border-box;
 }
 
-.answer{
+.answer-button, .try-again-button{
     width:150px;
     height:70px;
-    border-radius: 15px;
-    border: 2px solid white;
-    background-color: antiquewhite;
+    background-color: rgb(0, 0, 0);
+    color:#fff;
+    font-family: inherit;
     cursor:pointer; 
     margin:1em;
-}
+    border: none;
+    --b: 2px;   /* border thickness */
+    --s: .7em; /* size of the corner */
+    --c: #f5f5f5de;
+    
+    padding: calc(.05em + var(--s)) calc(.3em + var(--s));
+    color: var(--c);
+    --_p: var(--s);
+    background:
+      conic-gradient(from 90deg at var(--b) var(--b),rgba(0, 0, 0, 0.846) 90deg,var(--c) 0)
+      var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+    transition: .3s linear, color 0s, background-color 0s;
+    outline: var(--b) solid #0000;
+    outline-offset: .2em;
+  }
+  .answer-button:hover,
+  .answer-button:focus-visible{
+    --_p: 0px;
+    outline-color: var(--c);
+    outline-offset: .05em;
+  }
+  .answer-button:active {
+    background: var(--c);
+    color: #fff;
+  }
+
+  .try-again-button{
+    width:300px; 
+    height:60px;
+  }
+
+  .try-again-button:hover, 
+  .try-again-button:focus-visible{
+    --_p: 0px;
+    outline-color: var(--c);
+    outline-offset: .05em;
+  }
+
+  .try-again-button:active{
+    background: var(--c);
+    color: #fff;
+  }
 
 .question-box{
     width:80%; 
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: space-between;
     text-align: center;
+    position: relative;
+    opacity: 0;
+}
+
+.question{
+    width:50%;
+}
+
+.buttons{
+    width:40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons button{
+    width:100%; 
+}
+
+.summary-box{
+    width:80%; 
+    height:100%; 
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: opacity 1s ease-in;
 }
 
 .hidden {
     display:none;
 }
 
-.correct{
-    background-color: green;
+.circular-score{
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:250px; 
+    width:250px;
+    border-radius: 50%;
+    background: conic-gradient(#22a214 3.6deg, #ededed 0deg);
 }
 
-.wrong{
-    background-color: red;
+.circular-score::before{
+    content: '';
+    position: absolute;
+    height:210px;
+    width:210px; 
+    border-radius: 50%;
+    background-color: #fff;
 }
+
+.score-value{
+    position: relative;
+    font-size: 2rem;
+}
+
+.congrats{
+  font-size:1.5rem; 
+}
+
+.show{
+  opacity: 1;
+}
+
