@@ -9,8 +9,10 @@ Breaking Bad & Better Call Saul Quiz App is an interactive website designed for 
 - Two separated, themed quizes covering main plots, characters and events from both series. Users can test their knowledge about extraordinary world of Walter White and the lawyer Saul Goodman.
 - The aesthetic, pleasing and functional design of the side provides exceptional atmosphere.
 
-## Installation 
+## Screenshoots
 
-<code> git clone https://github.com/kacperlaudanski/BreakingBad-BetterCallSaul-Quiz.git </code> </br> 
-<code> npm install </code> </br> 
-<code> npm start </code> 
+<img width="1396" alt="Zrzut ekranu 2023-11-10 o 20 14 02" src="https://github.com/kacperlaudanski/BreakingBad-BetterCallSaul-Quiz/assets/107647375/90c7b5a4-df4d-45ac-8e81-011f063eee07">
+
+<img width="1114" alt="Zrzut ekranu 2023-11-10 o 20 14 38" src="https://github.com/kacperlaudanski/BreakingBad-BetterCallSaul-Quiz/assets/107647375/1d506030-6868-4afa-b2c1-03cb04428b79">
+
+
